@@ -1,0 +1,75 @@
+
+*{
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/back111.jpg);
+    background-attachment: fixed;
+}
+
+.myButton{
+    background: none;
+    border: none;
+    background: black;
+    color: #FF6600;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+
+.myButton:hover{
+    background-color: black;
+    color: #F3E7E5;
+}
+
+.myTittle{
+    font-size: 5rem;
+    color: #D31234;
+    margin-bottom: 50px;
+    font-family: "Pacifico", cursive;
+}
+
+p{
+    font-size: 1rem;
+    color: black;
+}
+
+.myTittleCard{
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Pacifico", cursive;
+}
+
+
+@media(max-width:876px){
+    .myTittle{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+}
+
+.contentLand{
+    background: rgba(133, 56, 122, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(133, 56, 122, 0.3);
+    padding: 20px;
+}
+
+.myImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+
+}
+
+.carousel{
+    margin-top: 4rem;
+}
