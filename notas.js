@@ -1,30 +1,29 @@
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function(){
     var addButton = document.getElementById('addButton');
     var commentInput = document.getElementById('commentInput');
     var saveButton = document.getElementById('saveButton');
-    var searchInput = document.getElementById('searchInput');
-    var completedCount = document.getElementById('completedCount');
+    var searchComment = document.getElementById('searchComment');
 
-    addButton.addEventListener('click', function () {
+    addButton.addEventListener('click', function(){
         addButton.style.display = 'none';
         commentInput.style.display = 'block';
         saveButton.style.display = 'block';
         commentInput.focus();
-    })
+    });
 
-    saveButton.addEventListener('click', function () {
+    saveButton.addEventListener('click', function(){
         addOrUpdateComment();
-    })
+    });
 
     loadComments();
 
-    searchInput.addEventListener('input', function(){
-        var searchValue = searchInput.value.trim().toLowerCase();
-        var Comments = JSON.parse(localStorage.getItem('Comments')) || [];
+    searchComment.addEventListener('input', function(){
+        var searchValue = searchComment.value.trim().toLowerCase();
+        var comments = JSON.parse(localStorage.getItem('comments')) || [];
 
-        var filteredComments = Comments.filter(function(Comment){
-            return Comment.text.toLowerCase().includes(searchValue);
+        var filteredComments = comments.filter(function(comment){
+            return comment.text.toLowerCase().includes(searchValue);
         });
         renderComments(filteredComments);
     });
