@@ -45,11 +45,10 @@ function renderComments(comments) {
         var commentElement = createCommentElement(comment, index);
         commentsContainer.appendChild(commentElement);
     });
-
 }
 
 
-function createCommentElement(comment, index) {
+function createCommentElement(comment, index){
     var commentElement = document.createElement('div');
     commentElement.className = 'col-lg-4 col-md-6 col-sm-12 comment';
 
@@ -82,7 +81,7 @@ function addOrUpdateComment() {
     var commentInputValue = document.getElementById('commentInput').value.trim();
     if (commentInputValue !== '') {
         var comments = JSON.parse(localStorage.getItem('comments')) || [];
-        var commentIndexElement = document.getElementById('CommentIndex');
+        var commentIndexElement = document.getElementById('commentIndex');
         var commentIndex = commentIndexElement ? parseInt(commentIndexElement.value) : -1;
         if (!isNaN(commentIndex) && commentIndex >= 0 && commentIndex < comments.length) {
             comments[commentIndex].text = commentInputValue;

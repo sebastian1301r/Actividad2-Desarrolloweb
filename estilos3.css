@@ -170,10 +170,19 @@ margin-top: 22rem;
     height: 100%;
     width: 100%;
   }
+  
+  .textareacontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+  }
 
   .myTextArea{
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #ffffff;
     background: #ff000052;
     border-radius: 16px;
@@ -185,6 +194,8 @@ margin-top: 22rem;
     width: 300px;
     height: 100px;
     outline: none;
+    display: block;
+    margin: 0 auto; 
   }
 
   .myTextArea::placeholder{
@@ -205,6 +216,10 @@ margin-top: 22rem;
     color: #FF6600;
     border: 2px solid black;
     z-index: 0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
+    margin-bottom: 20px;
   }
   
   .saveButton:hover {
