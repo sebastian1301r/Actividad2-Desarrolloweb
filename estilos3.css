@@ -96,3 +96,178 @@ margin-top: 22rem;
     height: 100%;
     border: 0;
 }
+
+.oneContainer {
+    /* From https://css.glass */
+    background: rgba(209, 13, 13, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);  
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.myContainer2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+  }
+
+  .otherContainer {
+    position: relative;
+    --size-button: 40px;
+    color: rgb(238, 10, 10);
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+  }
+
+  .myInput {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    width: auto;
+    border: none;
+    transition: all ease 0.3s;
+    background-color: #ff000052;
+    border: 3px solid;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .myInput:focus,
+  .myInput:not(:invalid) {
+    width: 200px;
+    cursor: text;
+  }
+  
+  .myInput:focus + .icon,
+  .myInput:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+
+  .myInput::placeholder{
+    color: #ffffff;
+  }
+
+  .otherContainer .icon {
+    position: absolute;
+    width: auto;
+    height: var(--size-button);
+    color: black;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+  }
+  
+  .otherContainer .icon svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .myTextArea{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #ff000052;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 300px;
+    height: 100px;
+    outline: none;
+  }
+
+  .myTextArea::placeholder{
+    color: #ffffff;
+  }
+
+  .saveButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: #FF6600;
+    border: 2px solid black;
+    z-index: 0;
+  }
+  
+  .saveButton:hover {
+    background-image: linear-gradient(20deg, #ffc685 0%, #ee4a2d 100%);
+    color: black;
+  }
+  
+  .saveButton:active {
+    transform: scale(0.97);
+  }
+  
+  .comment{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgb(238, 74, 74);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(247, 4, 4);
+    border: 3px solid black;
+    padding: 1%;
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+  
+  .edit-button{
+    padding: 8px;
+    background-color: #000000;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: #FF6600;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .edit-button:hover {
+    color: #000000;
+    background-color: #FF6600;
+    background-image: linear-gradient(20deg, #ffc685 0%, #ee4a2d 100%);
+  }
+
+  .delete-button{
+    padding: 8px;
+    background-color: #000000;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: #FF6600;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .delete-button:hover {
+    color: #000000;
+    background-color: #FF6600;
+    background-image: linear-gradient(20deg, #ffc685 0%, #ee4a2d 100%);
+  }
+
+  .taskContainer{
+    gap: 40px;
+}
